@@ -2,13 +2,12 @@
 __author__ = '霍格沃兹测试开发学社'
 __desc__ = '更多测试开发技术探讨，请访问：https://ceshiren.com/t/topic/15860'
 """
-import time
 
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 
-from web.advanced.page.base_page import BasePage
-from web.advanced.page.product_details import ProductDetails
+from page.base_page import BasePage
+from page.product_details import ProductDetails
 
 
 class Search(BasePage):

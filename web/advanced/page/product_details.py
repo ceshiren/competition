@@ -4,8 +4,8 @@ __desc__ = '更多测试开发技术探讨，请访问：https://ceshiren.com/t/
 """
 from selenium.webdriver.common.by import By
 
-from web.advanced.page.base_page import BasePage
-from web.advanced.page.shopping_cart import ShoppingCart
+from page.base_page import BasePage
+from page.shopping_cart import ShoppingCart
 
 
 class ProductDetails(BasePage):

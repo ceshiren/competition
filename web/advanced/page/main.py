@@ -6,8 +6,8 @@ import time
 
 from selenium.webdriver.common.by import By
 
-from web.advanced.page.base_page import BasePage
-from web.advanced.page.featured import Featured
+from page.base_page import BasePage
+from page.featured import Featured
 
 
 class Main(BasePage):
