@@ -11,6 +11,7 @@ from page.featured import Featured
 
 
 class Main(BasePage):
+    _BASE_URL = "http://litemall.hogwarts.ceshiren.com/vue/index.html#/user/"
     def goto_featured(self):
         self.find(By.CSS_SELECTOR, ".van-tabbar-item").click()
         return Featured(self.driver)

@@ -12,7 +12,8 @@ from page.product_details import ProductDetails
 
 class Search(BasePage):
     def search(self, search_name):
-        self.find(By.CSS_SELECTOR, "[placeholder='请输入商品名称']").send_keys(search_name)
+        self.find(By.CSS_SELECTOR, "form input").clear()
+        self.find(By.CSS_SELECTOR, "form input").send_keys(search_name)
         self.find(By.CSS_SELECTOR, ".van-field__control").send_keys(Keys.ENTER)
         self.wait_element_until_clickable(
             (By.CSS_SELECTOR, ".van-card__title")).click()

@@ -19,6 +19,10 @@ class BasePage:
         if not self.driver.current_url.startswith("http"):
             self.driver.get(self._BASE_URL)
 
+    def back_to(self):
+        self.driver.get(self._BASE_URL)
+        self.driver.refresh()
+
 
     def find(self, by, locator=None):
         if locator:
